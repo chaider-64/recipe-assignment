@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ END OF CSS RESET ~~~~~~~~~~~~~~~~~~~~ */
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Bebas+Neue&family=Kode+Mono:wght@400..700&family=Montserrat+Alternates:wght@700&family=Montserrat:ital@0;1&display=swap');
+:root{
+    --black: #0D0D0D;
+    --snow-white: :#F2F2F2;
+    --steel-blue: #7ABFBF;
+    --dark-steel-blue: rgba(122, 191, 191, .5);
+    --orange: #EB5428;
+}
+html {
+    background-color: rgba(122, 191, 191, .5);
+}
+body {
+    font-family: "Bebas Neue", "Montserrat", sans-serif;
+    width: 414px;
+    margin: 0 auto;
+    padding-top: 17px;
+    background-color: var(--snow-white);
+    height: 2650px;
+}
+#main_navigation > h2 {
+    display: none;
+}
+li p {
+    display: none;
+}
+ul {
+    max-height: 0;
+    overflow: hidden;
+}
+input:checked ~ ul {
+    max-height: 500px;
+}
+input {
+    display: none;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+} 
+nav {
+    position: absolute;
+    width: 414px;
+    top: 0;
+    padding-bottom: 10px;
+    background-color: white;
+}
+nav li {
+    display: grid;
+    justify-content: center;
+    width: 414px;
+    padding: 15px;
+    transition: background-color 0.5s ease;
+}
+nav li:hover {
+    background-color: var(--orange);
+    transition-duration: 0.5s;
+}
+nav li:first-child:hover {
+    color: transparent;
+}
+nav li:last-child:hover {
+    background-color: transparent;
+}
+nav p {
+    position: relative;
+    display: flex;
+    padding-left: 17.5px;
+    font-size: 20px;
+    top: 3px;
+}
+span svg {
+    padding: 5px 0 0 15px;
+    margin-top: 5px;
+}
+nav ul li img {
+    display: none;
+}
+#home {
+    display: none;
+}
+nav li a {
+    text-decoration: none;
+    color:var(--orange);
+    font-size: 20px;
+}
+nav li:last-child {
+    position: absolute;
+    top: -4px;
+    left: 165px;
+}
+nav li:last-child p {
+    top: 2px;
+    left: -20px;
+    font-size: 20px;
+    color: var(--black);
+}
+nav li:first-child svg {
+    position: absolute;
+    display: grid;
+    background-color: var(--orange);
+}
+#search-bar {
+    display: flex;
+    margin: 100px 90px 100px 60px;
+    border: 2px solid var(--orange);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+nav ul li a img {
+    max-height: 50px;
+    max-width: 50px;  
+    width: auto;     
+    height: auto;    
+}
+footer img {
+    width: 70%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto 10px; 
+}
+footer {
+    text-align: center; 
+    padding: 20px; 
+}
+footer p {
+    font-family: "Bebas Neue", sans-serif;
+}
+img{
+    width: auto;
+}
+@media screen and (min-width: 1280px) {
+    body {
+        width: 1280px;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1280px)  {
+    
+    body{
+        width: 768px;
+    }
+}
