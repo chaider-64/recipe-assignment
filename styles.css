@@ -59,12 +59,14 @@ html {
     background-color: rgba(122, 191, 191, .5);
 }
 body {
-    font-family: "Bebas Neue", "Montserrat", sans-serif;
-    width: 414px;
+    background-color: #f2f2f2;
+    width: 414px;  
     margin: 0 auto;
-    padding-top: 17px;
-    background-color: var(--snow-white);
-    height: 2650px;
+    padding: 0;
+    box-sizing: border-box; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
 }
 #main_navigation > h2 {
     display: none;
@@ -135,22 +137,6 @@ nav li a {
     color:var(--orange);
     font-size: 20px;
 }
-nav li:last-child {
-    position: absolute;
-    top: -4px;
-    left: 165px;
-}
-nav li:last-child p {
-    top: 2px;
-    left: -20px;
-    font-size: 20px;
-    color: var(--black);
-}
-nav li:first-child svg {
-    position: absolute;
-    display: grid;
-    background-color: var(--orange);
-}
 #search-bar {
     display: flex;
     margin: 100px 90px 100px 60px;
@@ -190,7 +176,7 @@ img{
         align-items: center; 
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1280px)  {
+@media screen and (min-width: 768px) {
     
     body{
         width: 768px;
